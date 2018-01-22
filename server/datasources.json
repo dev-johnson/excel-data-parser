@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgres": {
+    "host": "localhost",
+    "port": "",
+    "url": "",
+    "database": "excel_demo_database",
+    "password": "password",
+    "name": "postgres",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "AdminRewardPoint",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "key": {
+      "type": "string",
+      "required": true,
+      "default": "null"
+    },
+    "displayName": {
+      "type": "string",
+      "required": true,
+      "default": "null"
+    },
+    "point": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

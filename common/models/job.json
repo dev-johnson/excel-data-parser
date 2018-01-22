@@ -1,0 +1,63 @@
+{
+  "name": "Job",
+  "plural": "jobs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "null"
+    },
+    "company": {
+      "type": "string",
+      "required": true,
+      "default": "null"
+    },
+    "location": {
+      "type": "string",
+      "default": "null"
+    },
+    "heroDescription": {
+      "type": "string",
+      "default": "null"
+    },
+    "salary": {
+      "type": "string",
+      "default": "null"
+    },
+    "companySize": {
+      "type": "string"
+    },
+    "requirement": {
+      "type": "string",
+      "required": true
+    },
+    "experience": {
+      "type": "string",
+      "required": true,
+      "default": "null"
+    },
+    "education": {
+      "type": "string"
+    },
+    "jobDescription": {
+      "type": "string"
+    },
+    "aboutCompany": {
+      "type": "string"
+    },
+    "isActive":{
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
